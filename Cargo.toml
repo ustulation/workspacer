@@ -1,0 +1,15 @@
+[package]
+name = "workspacer"
+version = "0.1.0"
+authors = ["ustulation <ustulation@gmail.com>"]
+
+[workspace]
+members = ["proj0", "proj1"]
+
+[dependencies]
+proj0 = { path = "proj0" }
+proj1 = { path = "proj1" }
+futures = "0.1"
+
+[lib]
+crate_type = ["rlib", "staticlib"]
