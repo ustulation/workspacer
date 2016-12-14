@@ -6,5 +6,9 @@ authors = ["ustulation <ustulation@gmail.com>"]
 [workspace]
 members = ["safe_core", "safe_authenticator", "safe_app"]
 
+# If this is removed then each of the sub-projects will have thier own Cargo.lock file
+# will build binaries/objects in their own target/ directories. With this present, it's
+# always the parent-projects Cargo.lock and target/ directory used. Need to check if this
+# is standard behaviour or some bug about to be fixed.
 [lib]
-crate_type = ["rlib", "staticlib"]
+crate_type = ["rlib", "cdylib", "staticlib"]
