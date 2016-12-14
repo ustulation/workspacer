@@ -1,0 +1,10 @@
+[package]
+name = "safe_authenticator"
+version = "0.1.0"
+authors = ["ustulation <ustulation@gmail.com>"]
+
+[dependencies]
+safe_core = { path = "../safe_core" }
+
+[lib]
+crate_type = ["rlib", "cdylib", "staticlib"]

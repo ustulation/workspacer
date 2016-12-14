@@ -1,0 +1,11 @@
+[package]
+name = "safe_app"
+version = "0.1.0"
+authors = ["ustulation <ustulation@gmail.com>"]
+
+[dependencies]
+maidsafe_utilities = "~0.10.0"
+safe_core = { path = "../safe_core" }
+
+[lib]
+crate_type = ["rlib", "cdylib", "staticlib"]

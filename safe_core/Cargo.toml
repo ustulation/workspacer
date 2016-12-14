@@ -1,0 +1,7 @@
+[package]
+authors = ["ustulation <ustulation@gmail.com>"]
+name = "safe_core"
+version = "0.1.0"
+
+[dependencies]
+maidsafe_utilities = "~0.10.0"
